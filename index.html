@@ -20,7 +20,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       crossorigin="anonymous"
     />
   </head>
-  <body><!-- Google Tag Manager (noscript) -->
+  <body>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+  <script type="application/json">
+    {
+      "postPromptUI": "postPromptUI",
+      "clientConfig": {
+        "id": "67310",
+        "params": ""
+      }
+    }
+  </script>
+  <div id="postPromptUI">
+     <button on="tap:ConsentManager.prompt()" role="button">Manage privacy settings</button>
+  </div>
+</amp-consent>
+    <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MR5S8QR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
